@@ -8,9 +8,11 @@ import (
 
 func main() {
 
+	bucketSize := 11 // 桶的大小
+
 	score := [...]uint{5, 3, 5, 2, 10, 8}
 
-	result := BucketSort(11, score[:], "asc")
+	result := BucketSort(bucketSize, score[:], "asc")
 
 	fmt.Println(result)
 
