@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;algorithms&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../macaron-simple" />
+      <root url="file://$PROJECT_DIR$/../toecho" />
+      <root url="file://$PROJECT_DIR$/../tobeego" />
+      <root url="file://$PROJECT_DIR$/../echo-web" />
+      <root url="file://$PROJECT_DIR$/../init" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../macaron-simple" />
+      <root url="file://$PROJECT_DIR$/../toecho" />
+      <root url="file://$PROJECT_DIR$/../tobeego" />
+      <root url="file://$PROJECT_DIR$/../echo-web" />
+      <root url="file://$PROJECT_DIR$/../init" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
