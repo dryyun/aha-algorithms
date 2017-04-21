@@ -9,11 +9,15 @@ import (
 func main() {
 	score := [...]int{6, 1, 2, 7, 9, 3, 4, 5, 10, 8}
 	fmt.Println(score)
-	result := QuickSort(score[:], 0, len(score)-1, "asc")
+	result := QuickSort(score[:], "asc")
 	fmt.Println(result)
 }
 
-func QuickSort(score []int, left int, right int, order string) []int {
+func QuickSort(score []int, order string) []int {
+	return quickSort(score, 0, len(score)-1, order)
+}
+
+func quickSort(score []int, left int, right int, order string) []int {
 	if left < right {
 		i := left
 		j := right
@@ -44,8 +48,8 @@ func QuickSort(score []int, left int, right int, order string) []int {
 			}
 		}
 		score[left], score[i] = score[i], score[left]
-		score = QuickSort(score, left, i-1, order)
-		score = QuickSort(score, i+1, right, order)
+		score = quickSort(score, left, i-1, order)
+		score = quickSort(score, i+1, right, order)
 	}
 	return score
 }
