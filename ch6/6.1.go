@@ -27,7 +27,7 @@ func main() {
 	for k := 0; k < n; k++ {
 		for i := 0; i < n; i++ {
 			for j := 0; j < n; j++ {
-				if road[i][j] > road[i][k]+road[k][j] {
+				if i != j && road[i][j] > road[i][k]+road[k][j] {
 					road[i][j] = road[i][k] + road[k][j]
 				}
 			}
