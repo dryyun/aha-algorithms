@@ -2,9 +2,18 @@ package main
 
 import "fmt"
 
-const MAX = 999999
-
 func main() {
+	const MAX = 999999
+
+	showRoad := func(road [][]int) {
+		for _, row := range road {
+			for _, col := range row {
+				fmt.Printf("%8d", col)
+			}
+			fmt.Println()
+		}
+	}
+
 	road := [][]int{
 		{0, 2, 6, 4},
 		{MAX, 0, 3, MAX},
@@ -27,13 +36,4 @@ func main() {
 	fmt.Println("Result Road is ...")
 	showRoad(road)
 
-}
-
-func showRoad(road [][]int) {
-	for _, row := range road {
-		for _, col := range row {
-			fmt.Printf("%8d", col)
-		}
-		fmt.Println()
-	}
 }
